@@ -11,6 +11,11 @@ module.exports = {
       xxl: '1600px'
     },
     colors: {
+      'erasion-wht': '#ffffff',
+      'erasion-chp': '#faf5ed',
+      'erasion-drk2': '#383642',
+      'erasion-drk1': '#1c1b23',
+
       'red': '#ee3e38',
       'blue': '#1fb6ff',
       'purple': '#7e5bef', 
@@ -27,11 +32,32 @@ module.exports = {
       serif: ['Merriweather', 'serif'],
     },
     extend: {
+
+      fontFamily: {
+        'bigheader': 'MT ',
+      },
+      contrast: {
+        105: '1.05',
+        110: '1.1',
+        115: '1.15',
+      },
+
+      brightness: {
+        105: '1.05',
+        110: '1.1',
+        115: '1.15',
+      },
+
+      backgroundImage: {
+        'kayle': "url('/kayle.jpg')"
+      },
       scale: {
+        '-1': '-1',
         '105': '1.05',
       },
       visibility: ["group-hover"],
       spacing: {
+        '120': '30rem',
         '128': '32rem',
         '144': '36rem',
       },

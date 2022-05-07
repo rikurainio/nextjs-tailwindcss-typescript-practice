@@ -3,9 +3,9 @@ import { motion } from "framer-motion"
 
 const Home: NextPage = () => {
   return (
-    <motion.div   animate={{ opacity: [0, 1]}}
+    <motion.div id='main'  animate={{ opacity: [0, 1]}}
                   transition={{duration: 2}}
-                  className={'bg-kayle contrast-110 brightness-90 bg-no-repeat bg-cover h-full w-full absolute overflow-hidden'}>
+                  className={'bg-kayle contrast-110 brightness-90 bg-no-repeat bg-cover h-full w-full absolute scroll-smooth overflow-scroll'}>
       <div>
         <video autoPlay muted loop id='wind' className='flex-initial w-full h-full absolute mix-blend-screen opacity-60'>
           <source src='wind.mp4' type='video/mp4'></source>

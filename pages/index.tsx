@@ -1,8 +1,10 @@
 import type { NextPage } from 'next'
+import { motion } from "framer-motion"
 
 const Home: NextPage = () => {
   return (
-    <div className={'bg-kayle contrast-110 brightness-90 bg-no-repeat bg-cover h-full w-full absolute'}>
+    <motion.div   animate={{ opacity: [0, 1]}}
+                  className={'bg-kayle contrast-110 brightness-90 bg-no-repeat bg-cover h-full w-full absolute overflow-hidden'}>
       <div>
         <video autoPlay muted loop id='wind' className='flex-initial w-full h-full absolute mix-blend-screen opacity-60'>
           <source src='wind.mp4' type='video/mp4'></source>
@@ -17,7 +19,7 @@ const Home: NextPage = () => {
       <div className='flex bg-erasion-drk2 w-full h-full'>
         test
       </div>
-    </div>
+    </motion.div>
   )
 }
 

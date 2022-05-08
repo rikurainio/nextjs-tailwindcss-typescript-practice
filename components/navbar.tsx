@@ -15,7 +15,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
                 </div>
                 <div className="cursor-pointer">
                     <a href='https://www.discord.com/invite/pR4DgC82'>
-                        <BsDiscord className="text-erasion-wht w-full h-7 mt-120"/>
+                        <BsDiscord className="text-erasion-wht w-full h-7 mt-128"/>
                     </a>
                 </div>
                 <div className="cursor-pointer">

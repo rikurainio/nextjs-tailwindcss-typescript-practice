@@ -3,7 +3,7 @@ import React from 'react';
 
 const MyDocument = () => {
     return (
-        <Html style={{ scrollBehavior: 'smooth', backgroundColor: 'black'}}>
+        <Html className='scroll-smooth bg-erasion-drk1'>
           <Head />
           <body>
             <Main />

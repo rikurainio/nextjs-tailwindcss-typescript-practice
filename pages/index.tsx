@@ -3,24 +3,32 @@ import { motion } from "framer-motion"
 
 const Home: NextPage = () => {
   return (
-    <motion.div id='main'  animate={{ opacity: [0, 1]}}
-                  transition={{duration: 2}}
-                  className={'bg-kayle contrast-110 brightness-90 bg-no-repeat bg-cover h-full w-full absolute scroll-smooth overflow-scroll'}>
+    <div className='overflow-hidden'>
+
+      <motion.div id='main'  animate={{ opacity: [0, 1]}}
+                    transition={{duration: 2}}
+                    className={'h-screen'}>
+
+        <div className='absolute bg-kayle bg-no-repeat bg-cover w-full h-screen justify-center content-center'>
+          <video autoPlay muted loop id='wind' className='w-full h-screen mix-blend-screen opacity-100 contrast-150'>
+            <source src='wind3.mp4' type='video/mp4'></source>
+          </video>
+        </div>
+
+        <div className='text-erasion-chp italic text-7xl font-serif absolute flex w-full h-full justify-center items-center'>
+            <p>ERASION</p>
+        </div>
+
+      </motion.div>
+
       <div>
-        <video autoPlay muted loop id='wind' className='flex-initial w-full h-full absolute mix-blend-screen opacity-60'>
-          <source src='wind.mp4' type='video/mp4'></source>
-        </video>
-      </div>
-      <div className='w-full h-full text-center text-erasion-chp flex-col flex flex-1 justify-center content-center'>
-        <h1 className='text-8xl font-serif italic'>ERASION</h1>
-      </div>
-      <div className='flex bg-erasion-drk1 w-full h-full'>
         test
       </div>
-      <div className='flex bg-erasion-drk2 w-full h-full'>
+      <div>
         test
       </div>
-    </motion.div>
+    </div>
+    
   )
 }
 

@@ -15,6 +15,7 @@ module.exports = {
       'erasion-chp': '#faf5ed',
       'erasion-drk2': '#383642',
       'erasion-drk1': '#1c1b23',
+      'erasion-drk3': '#111212',
 
       'red': '#ee3e38',
       'blue': '#1fb6ff',
